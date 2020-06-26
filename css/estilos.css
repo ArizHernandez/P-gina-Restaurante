@@ -1,0 +1,374 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+}
+
+.contenedor {
+  width: 80%;
+  max-width: 1000px;
+  margin: auto;
+  overflow: hidden;
+}
+
+header {
+  width: 100%;
+  background: #281a0c url("../img/bg.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+}
+header .contenedor {
+  position: relative;
+  height: 480px;
+}
+header .contenedor .menu {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding: 20px;
+  position: relative;
+}
+header .contenedor .menu a {
+  color: #fff;
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  font-weight: 300;
+  margin: 10px;
+  position: relative;
+}
+header .contenedor .menu a:hover {
+  border-bottom: 2px solid #fff;
+  opacity: 0.7;
+}
+header .contenedor .contenido {
+  width: 100%;
+  position: absolute;
+  padding: 20px;
+  color: #fff;
+  top: 50%;
+  margin-top: -70px;
+}
+header .contenedor .contenido h1 {
+  font-weight: 600;
+  margin-bottom: -10px;
+}
+header .contenedor .contenido h1 span {
+  font-weight: 300;
+}
+header .contenedor .contenido h3 {
+  font-weight: 300;
+  font-style: italic;
+}
+
+.main {
+  background: #000 url("../img/bg-geometricLeaves.png");
+  background-repeat: repeat;
+}
+
+.main .acerca-de .contenedor {
+  overflow: visible;
+  position: relative;
+}
+.main .acerca-de .contenedor .foto {
+  position: absolute;
+  width: 70%;
+  top: -70px;
+}
+.main .acerca-de .contenedor .foto img {
+  vertical-align: top;
+  box-shadow: -2px -2px 10px rgba(0, 0, 0, 0.5);
+  width: 100%;
+  z-index: 0;
+}
+.main .acerca-de .contenedor article {
+  background: #fff;
+  padding: 40px;
+  padding-top: 5px;
+  width: 40%;
+  position: relative;
+  z-index: 1;
+  top: 400px;
+  float: right;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+}
+.main .acerca-de .contenedor article h3 {
+  font-size: 2em;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: -5px;
+}
+.main .acerca-de .contenedor article p {
+  color: #838282;
+  font-weight: 300;
+  font-size: 1.01em;
+}
+
+.main .menu {
+  padding-top: 500px;
+  margin-bottom: 50px;
+}
+.main .menu .contenedor .titulo {
+  text-align: center;
+  font-size: 1.7em;
+  margin-bottom: 20px;
+}
+.main .menu .contenedor .contenedorE-menu {
+  border: 2px solid #000;
+  overflow: hidden;
+  background: #fff;
+  padding: 5px;
+}
+.main .menu .contenedor .contenedorE-menu .contenedorI-menu {
+  border: 2px solid #000;
+  padding: 20px;
+  overflow: hidden;
+}
+.main .menu .contenedor .contenedorE-menu .contenedorI-menu article {
+  width: 50%;
+  float: left;
+  padding: 20px;
+  padding-top: 0px;
+}
+.main .menu .contenedor .contenedorE-menu .contenedorI-menu article .categoria {
+  font-size: 1.5em;
+  font-weight: 600;
+  text-align: center;
+}
+.main .menu .contenedor .contenedorE-menu .contenedorI-menu article .platillo {
+  overflow: hidden;
+  margin-bottom: 40px;
+  padding-bottom: 10px;
+  border-bottom: 4px dotted #000;
+}
+.main .menu .contenedor .contenedorE-menu .contenedorI-menu article .platillo .nombre {
+  font-size: 1.3em;
+  float: left;
+  margin-bottom: 15px;
+}
+.main .menu .contenedor .contenedorE-menu .contenedorI-menu article .platillo .precio {
+  font-size: 1.3em;
+  float: right;
+  margin-bottom: 15px;
+}
+.main .menu .contenedor .contenedorE-menu .contenedorI-menu article .platillo .descripcion {
+  color: #676767;
+  float: left;
+  clear: both;
+}
+
+.main .galeria {
+  padding: 20px;
+}
+.main .galeria .titulo {
+  font-size: 1.5em;
+  text-align: center;
+}
+.main .galeria .glider-contain {
+  width: 87%;
+  padding: 10px;
+}
+.main .galeria .glider-contain .glider-prev {
+  outline: none;
+  top: calc(50% - 35px);
+}
+.main .galeria .glider-contain .glider-next {
+  outline: none;
+  top: calc(50% - 35px);
+}
+.main .galeria .glider-contain .glider .carousel-contenido {
+  opacity: 0.8;
+  transition: 0.3s all ease;
+}
+.main .galeria .glider-contain .glider .carousel-contenido img {
+  width: 100%;
+  max-width: 520px;
+  height: 100%;
+  max-height: 300px;
+}
+.main .galeria .glider-contain .glider .carousel-contenido:hover {
+  opacity: 1;
+}
+
+.main .ubicacion {
+  background: #fff;
+  padding: 60px 0px;
+}
+.main .ubicacion .contenedor .titulo {
+  font-size: 1.7em;
+  text-align: center;
+  font-weight: 600;
+  overflow: hidden;
+}
+.main .ubicacion .contenedor .direccion {
+  float: left;
+  width: 50%;
+  margin-top: 10px;
+  text-align: left;
+  overflow: hidden;
+}
+.main .ubicacion .contenedor .direccion .calle {
+  margin-bottom: 15px;
+}
+.main .ubicacion .contenedor .direccion .email {
+  margin-top: -15px;
+}
+.main .ubicacion .contenedor .horario {
+  float: right;
+  width: 50%;
+  text-align: right;
+  overflow: hidden;
+}
+.main .ubicacion .contenedor .horario h4 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+.main .ubicacion .contenedor .horario .entre-semana, .main .ubicacion .contenedor .horario .fin-semana {
+  width: 50%;
+  float: left;
+  text-align: center;
+}
+
+.main .mapa {
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: -6px;
+}
+.main .mapa iframe {
+  overflow: hidden;
+  width: 100%;
+  max-height: 600px;
+}
+
+footer {
+  height: 150px;
+  background: #091920;
+  color: #fff;
+}
+footer .contenedor p {
+  text-align: center;
+  margin-top: 40px;
+  font-weight: 400;
+  font-size: 20px;
+}
+footer .contenedor .redes-sociales {
+  display: flex;
+  justify-content: center;
+}
+footer .contenedor .redes-sociales a {
+  text-decoration: none;
+  margin-top: -15px;
+  padding: 6px;
+  margin-right: 5px;
+  font-size: 20px;
+  color: #fff;
+  font-weight: 400;
+  border-radius: 5px;
+  font-family: "Poppins", sans-serif;
+  transition: 0.6s all ease;
+}
+footer .contenedor .redes-sociales .whatsapp i {
+  margin-right: 5px;
+}
+footer .contenedor .redes-sociales .facebook:hover {
+  background: #3b5998;
+}
+footer .contenedor .redes-sociales .instagram:hover {
+  background: #5851db;
+}
+footer .contenedor .redes-sociales .twitter:hover {
+  background: #1da1f2;
+}
+footer .contenedor .redes-sociales .whatsapp:hover {
+  background: #075e54;
+}
+
+@media screen and (max-width: 800px) {
+  header .contenedor {
+    position: static;
+    height: auto;
+  }
+  header .contenedor .contenido {
+    position: static;
+    margin: 100px 0;
+  }
+  header .contenedor .menu {
+    justify-content: center;
+    font-size: 1.1em;
+  }
+
+  .main .acerca-de .contenedor .foto {
+    width: 100%;
+    position: relative;
+  }
+  .main .acerca-de .contenedor article {
+    position: relative;
+    top: -50px;
+    width: 100%;
+    transform: translate(0px, 0);
+  }
+  .main .menu {
+    padding-top: 0px;
+  }
+  .main .menu .contenedor .contenedorE-menu .contenedorI-menu article {
+    width: 100%;
+  }
+  .main .ubicacion .contenedor .direccion {
+    font-size: 1rem;
+  }
+  .main .ubicacion .contenedor .horario {
+    font-size: 1rem;
+  }
+  .main .mapa {
+    width: 80%;
+    margin: auto;
+  }
+}
+@media screen and (max-width: 400px) {
+  header .contenedor {
+    width: 95%;
+  }
+  header .contenedor .menu a {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .main .acerca-de article .h3 {
+    font-size: 34px;
+    margin-bottom: 10px;
+  }
+  .main .menu .contenedor .contenedorE-menu .contenedorI-menu article .nombre, .main .menu .contenedor .contenedorE-menu .contenedorI-menu article .precio {
+    font-size: 12px;
+    line-height: 16px;
+    width: 100%;
+    text-align: center;
+  }
+  .main .menu .contenedor .contenedorE-menu .contenedorI-menu article .categoria {
+    text-decoration: underline;
+  }
+  .main .ubicacion {
+    margin-bottom: -30px;
+  }
+  .main .ubicacion .contenedor .titulo {
+    margin-bottom: 0px;
+  }
+  .main .ubicacion .contenedor .direccion, .main .ubicacion .contenedor .horario {
+    width: 100%;
+    text-align: center;
+  }
+
+  footer .contenedor p {
+    font-size: 16px;
+  }
+  footer .contenedor .redes-sociales a {
+    font-size: 16px;
+  }
+  footer .contenedor .redes-sociales a i {
+    font-size: 18px;
+  }
+}
+
+/*# sourceMappingURL=estilos.css.map */

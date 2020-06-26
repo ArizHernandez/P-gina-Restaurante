@@ -1,0 +1,14 @@
+$(document).ready(function(){
+    $('#facebook').on('click',function(e){
+        e.preventDefault();
+    })
+    $('#instagram').on('click',function(e){
+        e.preventDefault();
+    })
+    $('#twitter').on('click',function(e){
+        e.preventDefault();
+    })
+    $('#whatsapp').on('click',function(e){
+        e.preventDefault();
+    })
+})
