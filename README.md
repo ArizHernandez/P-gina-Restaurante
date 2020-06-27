@@ -1,8 +1,7 @@
-# Página Restaurante
-## Pagina web para un restaurante
+# Página para un restaurante
 ##### Utilizando HTML/CSS/JS/SASS/JQUERY
 ___
-Esta es una practica en la cual realice una página web
+En esta practica realice una página web
 para una restaurante, utilizando ***Sass y jQuery*** ademas
 de poner en practica el diseño ***parallax*** y un carousel
 utilizando ***glider.js***
