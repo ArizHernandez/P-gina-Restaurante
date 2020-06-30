@@ -1,3 +1,9 @@
+@keyframes mostrar
+    from
+        opacity: 0
+    to
+        opacity: 1
+        
 .main
     .galeria
         padding: 20px
@@ -5,6 +11,7 @@
             font-size: 1.5em
             text-align: center
         .glider-contain
+            animation: mostrar ease 5s
             width: 87%
             padding: 10px
             .glider-prev

@@ -39,6 +39,7 @@ header .contenedor .menu a {
   font-weight: 300;
   margin: 10px;
   position: relative;
+  opacity: 0;
 }
 header .contenedor .menu a:hover {
   border-bottom: 2px solid #fff;
@@ -50,6 +51,7 @@ header .contenedor .contenido {
   padding: 20px;
   color: #fff;
   top: 50%;
+  opacity: 0;
   margin-top: -70px;
 }
 header .contenedor .contenido h1 {
@@ -160,6 +162,14 @@ header .contenedor .contenido h3 {
   clear: both;
 }
 
+@keyframes mostrar {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 .main .galeria {
   padding: 20px;
 }
@@ -168,6 +178,7 @@ header .contenedor .contenido h3 {
   text-align: center;
 }
 .main .galeria .glider-contain {
+  animation: mostrar ease 5s;
   width: 87%;
   padding: 10px;
 }

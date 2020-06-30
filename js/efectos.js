@@ -35,6 +35,7 @@ $(document).ready(function(){
     //efecto menu
     $('.menu a').each(function(index, elemento){
         $(this).css({
+            opacity: "1",
             'top': '-200px'
         })
         $(this).animate({
@@ -44,7 +45,6 @@ $(document).ready(function(){
     //efecto header
     if($(window).width() > 800){
         $('header .contenido').css({
-            opacity: 0,
             marginTop: 0
         })
         $('header .contenido').animate({
